@@ -22,8 +22,10 @@ hr {
 .navbar-brand {
     font-family: 'Ubuntu';
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.5;
+    color: #2E4052;
+    padding: 0.75rem;
 }
 
 .nav-item {
@@ -59,7 +61,6 @@ h2 {
     font-weight: normal;
     width: 50%;
 }
-
 h3 {
     font-family: 'Montserrat', sans-serif;
     color: #616E5E;
@@ -103,7 +104,7 @@ a:hover {
     
 }
 
-.btn {
+/* .btn {
     background-color: #E8CF5E;  
     border-radius: 10px;
     padding: 0.5rem;
@@ -111,7 +112,7 @@ a:hover {
 .btn:hover {
     background-color: #616E5E;
     transition: background-color 0.1s;
-}
+} */
 
 
 .top-cloud {
