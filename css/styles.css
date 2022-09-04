@@ -131,6 +131,16 @@ a:hover {
     background-color: #B8D0EB;
 }
 
+.article-body {
+    box-sizing: border-box;
+    background-color: whitesmoke; 
+    text-align: justify;
+    /* border-left-width: 0.5rem;
+    border-style: solid; */
+    border: 0.2rem solid #2e405252;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
 /* https://colorhunt.co/palette/f7ecdee9dac19ed2c654bab9 */
 
 /*https://coolors.co/616e5e-2e4052-b8d0eb-e8cf5e-756d2f*/
