@@ -70,6 +70,34 @@ h6 {
     font-family: 'Montserrat', sans-serif;
     color: rgba(59, 66, 57, 0.959)
 }
+.body-subtitle {
+    margin: 1% 0 0.1% 0;
+}
+figure {
+    border: thin rgba(59, 66, 57, 0.247) solid; 
+    padding: 0.6rem;
+    margin: 0.5rem;
+}
+figcaption {
+    display: block;
+    font-size: x-small;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    text-indent: 0;
+    margin: 0.1rem auto;
+    padding: 0.1em;
+  }
+p {
+    font-size:0.7rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+li {
+    font-size:0.7rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+}
 a {
     color: #756D2F;
     transition: color 0.1s;
@@ -142,7 +170,7 @@ a:hover {
     text-align: justify;
     /* border-left-width: 0.5rem;
     border-style: solid; */
-    border: 0.2rem solid #2e405252;
+    border: 0.09rem solid #2e40524b;
     border-top-width: 0px;
     border-bottom-width: 0px;
 }
@@ -195,3 +223,27 @@ a:hover {
     justify-content: center;
     align-items: center;
 } */
+
+.body-image {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assignment {
+    background-color: rgba(128, 128, 128, 0.096);
+    border-left: 3px solid rgba(218, 165, 32, 0.781);
+    padding: 0.1rem 0.4rem;
+}
+.carousel-item {
+    padding: 2% 10%;
+}
+.carousel-caption {
+    color: #454e43;
+    position:static;
+}
+.carousel-control-prev {
+    color: black;
+}
+
