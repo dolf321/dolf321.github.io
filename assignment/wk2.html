@@ -85,7 +85,8 @@
           GitHub. Be sure to include illustrative visuals (screenshots) in your blog which allow your reader to follow
           your investigative process. </p>
         <h3 class="text-center mt-4 p-1">Analysis of HP Fan Fiction character topics</h2>
-          <p><strong>Hello!</strong> In today's analysis we begin by trying to understand which characters are most commonly mentioned in
+          <p><strong>Hello!</strong> In today's analysis we begin by trying to understand which characters are most
+            commonly mentioned in
             HP(Harry Potter)
             fan fiction to juxtapose it to the original J.K. Rowling HP books. We're going to also analyze how these
             characters interact and are portrayed in comparison to the originals.
@@ -99,11 +100,14 @@
           <h6 class="body-subtitle">Character occurances</h6>
           <p>
             To get names of all the characters in the book series, we copied this csv file from <a class=""
-              target="_blank" href="https://raw.githubusercontent.com/efekarakus/potter-network/master/data/characters.csv">here.</a> 
-            We extracted all the frist names and added a few last names that are commonly used in Harry Potter such as Dumbledore and Snape.
+              target="_blank"
+              href="https://raw.githubusercontent.com/efekarakus/potter-network/master/data/characters.csv">here.</a>
+            We extracted all the frist names and added a few last names that are commonly used in Harry Potter such as
+            Dumbledore and Snape.
             We now put all those values and feed it into our word list search, by going to <em>Tool preferences -> Word
               List -> Load file</em> and adding our csv file to load our list of names. We get the following
-            results for the fan fiction texts, where frequencies are <em>harry > severus > hemione > ron > dumbledore</em> for the
+            results for the fan fiction texts, where frequencies are <em>harry > severus > hemione > ron >
+              dumbledore</em> for the
             fan fiction.
           </p>
           <figure>
@@ -128,10 +132,13 @@
           </figure>
           <p>
             For the Rowling texts we see that the order of frequency for the top 5 is
-            <em>harry > ron > hermione > dumbledore > snape.</em> 
-            We can see that Severus is more popularized in fan fiction as its the second most commonly used name. Even if we add Severus Snape's frequency for first
-            and last name it doesnt even reach top 4 in Rowling's texts. So we conclude that Severus seems to be a fan favorite but was more underepresented in 
-            the originals. But why is Severus Snape more popular, to find out lets see how he's used in context of the fan fiction Corpus.
+            <em>harry > ron > hermione > dumbledore > snape.</em>
+            We can see that Severus is more popularized in fan fiction as its the second most commonly used name. Even
+            if we add Severus Snape's frequency for first
+            and last name it doesnt even reach top 4 in Rowling's texts. So we conclude that Severus seems to be a fan
+            favorite but was more underepresented in
+            the originals. But why is Severus Snape more popular, to find out lets see how he's used in context of the
+            fan fiction Corpus.
           </p>
 
 
@@ -139,22 +146,34 @@
           <h6 class="body-subtitle">Characters and their contexts</h6>
           <p>
             Before anything lets brush up on who some important characters are based off forums:</p>
-            <ul class="text-left px-0 mx-3 my-1">
+          <ul class="text-left px-0 mx-3 my-1">
             <li>
-            <em>Whos is Sirius?</em> In short Sirius Black is a good friend of Harry Potter and his father and set against
-            the Antogonist Voldemort through a group called Order of the Pheonix. <a target="_blank" href="https://harrypotter.fandom.com/wiki/Sirius_Black"> Click here for more.</a>
+              <em>Whos is Sirius?</em> In short Sirius Black is a good friend of Harry Potter and his father and set
+              against
+              the Antogonist Voldemort through a group called Order of the Pheonix. <a target="_blank"
+                href="https://harrypotter.fandom.com/wiki/Sirius_Black"> Click here for more.</a>
             </li>
             <li>
-            <em>Who is Severus?</em> Severus Snape is a master of the dark arts and had originally part of the Death Eaters
-            - a group pledging allegiance to the antognist Lord Voldemort - before switching sides to the Order of The Pheonix following
-            the murder of a woman he loved named Lily by Lord Voldemort. He had become strongly loyal to <a target="_blank" href="https://harrypotter.fandom.com/wiki/Albus_Dumbledore">Dumbledore</a>
-             to the extent of killing him  at his own request. He had eventually died fighting Lord Voldemort, this could potentially be a reason as to why viewers liked Severus so much, as he had 
-             died avenging a woman he loved.
+              <em>Who is Severus?</em> Severus Snape is a master of the dark arts and had originally part of the Death
+              Eaters
+              - a group pledging allegiance to the antognist Lord Voldemort - before switching sides to the Order of The
+              Pheonix following
+              the murder of a woman he loved named Lily by Lord Voldemort. He had become strongly loyal to <a
+                target="_blank" href="https://harrypotter.fandom.com/wiki/Albus_Dumbledore">Dumbledore</a>
+              to the extent of killing him at his own request. He had eventually died fighting Lord Voldemort, this
+              could potentially be a reason as to why viewers liked Severus so much, as he had
+              died avenging a woman he loved.
             </li>
-            </ul>
+
+            <li>
+              I also suggest you do a quick reading on some more characters in the text and the general plot of the Harry Potter book series
+              <a target="_blank" href="https://harrypotter.fandom.com/wiki"> here.</a>
+            </li>
+          </ul>
 
           <p>
-            So now that we brushed up on some characters, lets begin by running collocation and concordance on words 'Severus' and 'Snape' in fan fiction 
+            So now that we brushed up on some characters, lets begin by running collocation and concordance on words
+            'Severus' and 'Snape' in fan fiction
             to get some context:
           </p>
           <figure>
@@ -166,18 +185,25 @@
             </figcaption>
           </figure>
 
-          <p>In this list we find some interesting collocated words, lets look at those that include human names to see how Severus is viewed interacting with
-            other characters in fan fiction. We find that 'Brenda' and 'Dumbledore' are the most prominent names, so we run a concordance on those words with 
-            Snape by clicking on them. We will also take a look at 'grandfather' as its endearing tone might hint towards why Snape is loved so greatly in the 
+          <p>In this list we find some interesting collocated words, lets look at those that include human names to see
+            how Severus is viewed interacting with
+            other characters in fan fiction. We find that 'Brenda' and 'Dumbledore' are the most prominent names, so we
+            run a concordance on those words with
+            Snape by clicking on them. We will also take a look at 'grandfather' as its endearing tone might hint
+            towards why Snape is loved so greatly in the
             community.
           </p>
 
           <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -197,43 +223,50 @@
               <div class="carousel-item">
                 <img src="/images/ass1/congrandpa.png" class="d-block w-100 m-auto" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Concordance between Grandpa and Snape</h5>
+                  <h5>Concordance between Grandfather and Snape</h5>
                   <!-- <p>.</p> -->
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="/images/ass1/plot.png" class="d-block w-75 m-auto" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Concordance plot</h5>
+                  <h5>Concordance plot of the word Severus</h5>
                   <!-- <p>Some representative placeholder content for the third slide.</p> -->
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
 
-          <p> So from a look of concordance with the words Grandpa and Snape we see that most of these occurances of portraying Snape as an endearing
-            grandfather is by DramaGirl. Which from a quick look at concordance with Snape and Brenda we see the plot is meant to be a fictional spin-off 
-            of Harry Potter where Harry Potter is now a girl names Brenda Potter. This is verified through a quick look at the corpus mentioning a "Ms. Potter."
-            We also see a strong relationship built on trust between Dumbledore and Snape which matches the originals. From this we see snape as a loving and 
-            heartbroken man from him being portrayed as a loving grandpa taking care of Ms. Potter to spying for Dumbledore in 'Witchdragon_dragonheart'.
-            This coudl potentially mean that fan fiction writers resonated with the loss his beloved Lily in the originals so much that they
-            decided to portray his chivalrous protaganistic behavior in their workings. One might argue that specific fan fictions might be mentioning
-            Severus too much and it is not an accurate representation of the community. So the last slide contains a Concordance plot to investigate the distribution 
-            of his name. The plot shows that 7 of the total fan fiction writers had mentioned snape at least once, which is more than half of the texts in our dictionary.
+          <p> So, from a look of concordance with the words Grandpa and Snape, we see that most of these occurances of
+            portraying Snape as an endearing grandfather is by DramaGirl. Which from a quick look at concordance with
+            Snape and Brenda, we see Dramagirl's plot is meant to be a fictional spin-off of Harry Potter where Harry
+            Potter is now a girl named Brenda Potter. This is verified through a quick look at the corpus mentioning a
+            "Ms. Potter." We also see a strong relationship built on trust between Dumbledore and Snape, which matches
+            the originals. From this, we see Snape as a loving and heartbroken man. From him being portrayed as a loving
+            grandpa, taking care of Ms. Potter to spying for Dumbledore in 'Witchdragon_dragonheart'. This could
+            potentially mean that fan fiction writers resonated with the loss of Snape's beloved Lily in the originals
+            so much that they decided to portray his chivalrous, protaganistic behavior in their works. One might argue
+            that specific fan fiction might mention Severus too much and it is not an accurate representation of the
+            community. So the last slide contains a Concordance plot to investigate the distribution of his name. The
+            plot shows that 7 of the 12 texts mentioned Snape at least once, which is more than half of the texts in our
+            dictionary. This shows that the distribution is quite spread out across texts and not skewed drastically due
+            to simply one text.
           </p>
-          
-          
 
 
-          
+
+
+
 
 
       </div>
@@ -242,8 +275,6 @@
 
   <div class="bottom-container">
     <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
     <p>©2022 Rami Richani.</p>
   </div>
 
