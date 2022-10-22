@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Rami Richani</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap integration -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Font awesome for icons  -->
+  <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+    integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar sticky-top navbar-expand-md">
+    <a class="navbar-brand" href="#">Programming like a human</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--<img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" height=35px>-->
+      <!--<button class="btn btn-large btn-dark">Hello World</button>-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/RLAC.html">RLAC</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="article_title">
+
+  </section>
+  <section style="margin-bottom: 40%;">
+    <div class="row">
+      <div class="article-body col-md-10 col-sm-11 col-11 m-auto px-4 px-sm-3 py-lg-4 py-sm-2 my-3">
+        <h1 class="my-2 text-center">Assigment 1</h1>
+        <h3>Assignment Task</h3>
+        <p class="assignment">Assignment 1 (due 7-27 October) see the rubrics and guidelines. Use one of the already
+          downloaded corpora from AntCorGen or Follow the steps to download AntCorGen described in the video above to
+          download your own. Use AntConc to analyze the corpus that you have created. What are the most common words?
+          specialized words? clusters? collocations? Are there groups of articles with common trends? Did your results
+          match your hypotheses? Feel free to use Antconc or Voyant tools for your analysis, but be aware that it is
+          more difficult to use Voyant with many documents at a time. </p>
+
+        <h3 class="text-center mt-4 p-1">Analysis of PLOS ONE "Military" Corpus</h2>
+          <p><strong>Hello,</strong> today we'll generating a Corpus containing any occurances of the word military,
+            then running an analysis on what specific topics are refered to in the text.
+          </p>
+
+          <p>
+            We first generate the corpora using AntCorGen and query for any occurances of the word "military" as
+            follows:
+          </p>
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:80%" src="/images/ass2/1.png"></div>
+            </div>
+            <figcaption>
+              AntCorGen corpus creation.
+            </figcaption>
+          </figure>
+
+          <p>To analyze word occurances, we're going to be using the Voyant wordcloud feature to get a general
+            understanding
+            of the text, we will then see in what contexts they're used to get an idea of the topics dicussed. <em>Let's
+              get to it...</em></p>
+
+          <h6 class="body-subtitle">Getting context</h6>
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:60%" src="/images/ass2/cloud.png"></div>
+            </div>
+            <figcaption>
+              Generated word cloud.
+            </figcaption>
+          </figure>
+
+          <p>
+            We see some interesting and frequent words used are: <em>military, risk, health, study.</em> From this we
+            assume the Corpus contains a lot of studies discussing health risks of working in the Defense industry. To
+            verify this we
+            need some more context, so we run a concordance on the word <em>risk</em>. Lets also run a concordance on
+            the word
+            <em>military</em> to understand the corpus better.
+          </p>
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/ass2/milconc.png" class="d-block w-100 m-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Concordance on the word <em>Military</em></h5>
+                  <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/ass2/riskconc.png" class="d-block w-100 m-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Concordance on the word <em>Risk</em></h5>
+                  <!-- <p>.</p> -->
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <p>As expected we see the word risk being used to identify health impact on military troops, through
+            a closer look we see a lot of articles discussing respiratory diseases and tuberculosis, possibly due to
+            smoking addiction across soldiers. We also notice something very interesting from concordance on the word
+            Military,
+            we see a lot of mention of specific countries and regions. Which contries are mentioned most frequently and
+            why? We answer this through generating a word list that searches for a set of specific words.
+          </p>
+
+          <h6 class="body-subtitle">Which militaries and why?</h6>
+          <p>We download a set of countries and their acronyms from <a target="_blank"
+              href="https://pkgstore.datahub.io/core/country-list/data_csv/data/d7c9d7cfb42cb69f4422dec222dbbaa8/data_csv.csv">
+              here. </a>We use this data to generate a set of search terms that we put in the advanced option of our
+            clusters tool and run
+            a cluster analysis to determine which phrases or countries are more frequently mentioned. It is likely
+            that the most mentioned contries would be those with large militaries are those that have partaken in
+            popular wars.
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:90%;">
+              <div class="col-4"><img class="body-image" src="/images/ass2/wl.png"></div>
+              <div class="col-8"><img class="body-image" src="/images/ass2/wl2.gif"></div>
+            </div>
+            <figcaption>
+              Cluster tools on countries and their acronyms.
+            </figcaption>
+          </figure>
+
+          <p>We immidiately realize that acronyms seem to be top, which is abnormal. But through running a concordance
+            on some of
+            the most frequently used acronyms we notice that they are being used in the context of units. An example
+            being CI,
+            which is being used as the unit Curie and not the country Côte d'Ivoire in all cases. As such, lets ignore
+            units that might be mistaken for countries and only look at country phrases when ranking the most mentioned
+            countries. With this in mind we recognize the most frequently mentioned
+            countries are <em>China, USA, Iraq, Peru, and Thailand</em> in that order from highest to lowest. Why are
+            these countries
+            mentioned
+            frequently? Peru especially stands out as it hasn't had a war since 1995 and is ranked 50 in Military
+            Strength;
+            perhaps Peru is not mentioned in the context of its military but something else. To investigate we run a
+            concordance on the word <em>Peru</em>. We also investigate why China is mentioned more than the US and on
+            what
+            specific topics through running a concordance on the word <em>China</em>.
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:90%;">
+              <div class="col-6"><img class="body-image" src="/images/ass2/china.png"></div>
+              <div class="col-6"><img class="body-image" src="/images/ass2/Peru3.png"></div>
+            </div>
+            <figcaption>
+              Concordance on China and Peru.
+            </figcaption>
+          </figure>
+
+          <p>
+            From the concordance we determine China and Peru are mentioned almost entirely due to viral outbreaks in
+            their regions.
+            One of the main reason Peru is the most frequently mentioned is because Peru is currently dealing with an
+            epidemic
+            cased by a mosquito-borne viral disease known as <a target="_blank"
+              href="https://www.mayoclinic.org/diseases-conditions/dengue-fever/symptoms-causes/syc-20353078#:~:text=Dengue%20(DENG%2Dgey)%20fever,fever%20and%20flu%2Dlike%20symptoms.">
+              Dengue.</a> An example of this is in a paper that discusses preventative measures such as installing
+            insecticide treated curtains in
+            Peruvian homes, we discover this through a combination of concordance and file view. Running a concordance
+            for Peru in the context of the word
+            military reveals that articles are solely discuss disease outbreaks and their affect on military troops
+            stationed in Jungles and not a comparison of world powers. This is mainly due to the fact a large majority
+            of articles published in he PLOS journals are in Epidemiology and Medicine according to their <a target="_blank" href="https://plos.org/publish/publishing-faqs/"> FAQ.</a>
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:90%;">
+              <div class="col-8 mx-auto"><img class="body-image" src="/images/ass2/plos.png"></div>
+            </div>
+          </figure>
+
+          <p>In conclusion, we discovered the corpus discusses the affects of mostly tropical diseases in certain regions and their affect on military personel stationed
+            in those regions. This can be expected considering the topics published in the PLOS one journals. The reason China and Peru are 
+            frequently mentioned in these articles could be simply due to the fact that there is a larger spread of disease in those regions.
+          </p>
+
+
+      </div>
+  </section>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <p>©2022 Rami Richani.</p>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>
