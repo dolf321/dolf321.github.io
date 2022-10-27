@@ -83,12 +83,17 @@
           more difficult to use Voyant with many documents at a time. </p>
 
         <h3 class="text-center mt-4 p-1">Analysis of PLOS ONE "Military" Corpus</h2>
-          <p><strong>Hello,</strong> today we'll generating a Corpus containing any occurances of the word military,
-            then running an analysis on what specific topics are refered to in the text.
+          <p><strong>Hello,</strong> today we'll be creating a Corpus containing any occurences of the word military,
+            then running an analysis on what specific topics are referred to in the text. We search for articles
+            mentioning
+            the military to get a further understanding on what topics and why those topics are mentioned by the most
+            frequently
+            mentioned countries.
+
           </p>
 
           <p>
-            We first generate the corpora using AntCorGen and query for any occurances of the word "military" as
+            We first generate the corpora using AntCorGen and query for any occurences of the word "military" as
             follows:
           </p>
           <figure>
@@ -102,7 +107,7 @@
 
           <p>To analyze word occurances, we're going to be using the Voyant wordcloud feature to get a general
             understanding
-            of the text, we will then see in what contexts they're used to get an idea of the topics dicussed. <em>Let's
+            of the text, we will then see in what contexts they're used to get an idea of the topics discussed. <em>Let's
               get to it...</em></p>
 
           <h6 class="body-subtitle">Getting context</h6>
@@ -119,7 +124,7 @@
             We see some interesting and frequent words used are: <em>military, risk, health, study.</em> From this we
             assume the Corpus contains a lot of studies discussing health risks of working in the Defense industry. To
             verify this we
-            need some more context, so we run a concordance on the word <em>risk</em>. Lets also run a concordance on
+            need some more context, so we run a concordance on the word <em>risk</em>. Let's also run a concordance on
             the word
             <em>military</em> to understand the corpus better.
           </p>
@@ -161,11 +166,11 @@
           </div>
 
 
-          <p>As expected we see the word risk being used to identify health impact on military troops, through
-            a closer look we see a lot of articles discussing respiratory diseases and tuberculosis, possibly due to
+          <p>As expected, we see the word 'risk' being used to identify health impact on military troops. Through
+            a closer look we notice articles discussing respiratory diseases and tuberculosis, possibly due to
             smoking addiction across soldiers. We also notice something very interesting from concordance on the word
             Military,
-            we see a lot of mention of specific countries and regions. Which contries are mentioned most frequently and
+            we see a lot of mention of specific countries and regions. Which countries are mentioned most frequently and
             why? We answer this through generating a word list that searches for a set of specific words.
           </p>
 
@@ -175,7 +180,7 @@
               here. </a>We use this data to generate a set of search terms that we put in the advanced option of our
             clusters tool and run
             a cluster analysis to determine which phrases or countries are more frequently mentioned. It is likely
-            that the most mentioned contries would be those with large militaries are those that have partaken in
+            that the most mentioned countries would be those with large militaries are those that have partaken in
             popular wars.
           </p>
 
@@ -189,11 +194,11 @@
             </figcaption>
           </figure>
 
-          <p>We immidiately realize that acronyms seem to be top, which is abnormal. But through running a concordance
+          <p>We immediately realize that acronyms seem to be top, which is abnormal. But through running a concordance
             on some of
-            the most frequently used acronyms we notice that they are being used in the context of units. An example
+            the most frequently used acronyms, we notice that they are being used in the context of units. An example
             being CI,
-            which is being used as the unit Curie and not the country Côte d'Ivoire in all cases. As such, lets ignore
+            which is being used as the unit Curie and not the country Côte d'Ivoire in all cases. As such, let's ignore
             units that might be mistaken for countries and only look at country phrases when ranking the most mentioned
             countries. With this in mind we recognize the most frequently mentioned
             countries are <em>China, USA, Iraq, Peru, and Thailand</em> in that order from highest to lowest. Why are
@@ -201,7 +206,7 @@
             mentioned
             frequently? Peru especially stands out as it hasn't had a war since 1995 and is ranked 50 in Military
             Strength;
-            perhaps Peru is not mentioned in the context of its military but something else. To investigate we run a
+            perhaps Peru is not mentioned in the context of its military but something else. To investigate, we run a
             concordance on the word <em>Peru</em>. We also investigate why China is mentioned more than the US and on
             what
             specific topics through running a concordance on the word <em>China</em>.
@@ -218,30 +223,72 @@
           </figure>
 
           <p>
-            From the concordance we determine China and Peru are mentioned almost entirely due to viral outbreaks in
-            their regions.
-            One of the main reason Peru is the most frequently mentioned is because Peru is currently dealing with an
-            epidemic
-            cased by a mosquito-borne viral disease known as <a target="_blank"
+            From the concordance we determine China and Peru are mentioned a lot partly due to viral outbreaks in their
+            regions. One of the main reason Peru is the most frequently mentioned is that it's currently dealing with an
+            epidemic cased by a mosquito-borne viral disease known as <a target="_blank"
               href="https://www.mayoclinic.org/diseases-conditions/dengue-fever/symptoms-causes/syc-20353078#:~:text=Dengue%20(DENG%2Dgey)%20fever,fever%20and%20flu%2Dlike%20symptoms.">
-              Dengue.</a> An example of this is in a paper that discusses preventative measures such as installing
-            insecticide treated curtains in
-            Peruvian homes, we discover this through a combination of concordance and file view. Running a concordance
-            for Peru in the context of the word
-            military reveals that articles are solely discuss disease outbreaks and their affect on military troops
-            stationed in Jungles and not a comparison of world powers. This is mainly due to the fact a large majority
-            of articles published in he PLOS journals are in Epidemiology and Medicine according to their <a target="_blank" href="https://plos.org/publish/publishing-faqs/"> FAQ.</a>
+              Dengue.</a> An example of this is in a paper that
+            discusses preventative measures such as installing insecticide treated curtains in Peruvian homes, we
+            discover this through a combination of concordance and file view. Running a concordance for Peru in the
+            context of the word military reveals that articles are solely discuss disease outbreaks and their effect on
+            military troops stationed in Jungles, and not a comparison of world powers. This might be due to the fact a
+            large majority of articles published in the PLOS journals are in Epidemiology and Medicine, according to
+            their <a target="_blank" href="https://plos.org/publish/publishing-faqs/"> FAQ.</a>
           </p>
 
+          
           <figure>
-            <div class="row mx-auto" style="width:90%;">
+            <div class="row mx-auto" style="width:60%;">
               <div class="col-8 mx-auto"><img class="body-image" src="/images/ass2/plos.png"></div>
             </div>
           </figure>
 
-          <p>In conclusion, we discovered the corpus discusses the affects of mostly tropical diseases in certain regions and their affect on military personel stationed
-            in those regions. This can be expected considering the topics published in the PLOS one journals. The reason China and Peru are 
-            frequently mentioned in these articles could be simply due to the fact that there is a larger spread of disease in those regions.
+          <h6 class="body-subtitle">Let's talk politics</h6>
+          <p>
+            Epidemiology is a big playing factor in China, being mentioned frequently. But is political bias influencing
+            the context in which China is being mentioned? To analyze this, we run a collocation on China and juxtapose
+            it to the USA. India is also another global disease hotspot according to <a target="_blank"
+              href="https://www.ecohealthalliance.org/2017/10/global-disease-hotspots-2-0#:~:text=Places%20like%20Bangladesh%2C%20India%2C%20and,populated%20countries%20in%20the%20world.">
+              this article here.</a> As such, we also
+            check the context in which India is mentioned to see if it's also mentioned in the context of disease like
+            China.
+          </p>
+          <!--INDIA1 CHINA2 US1-->
+          <figure>
+            <div class="row mx-auto" style="width:90%;">
+              <div class="col-4"><img class="body-image" src="/images/ass2/china2.gif"></div>
+              <div class="col-4"><img class="body-image" src="/images/ass2/india1.png"></div>
+              <div class="col-4"><img class="body-image" src="/images/ass2/us.png"></div>
+            </div>
+            <figcaption>
+              Collocation on US, India, and China.
+            </figcaption>
+          </figure>
+          <p>
+            We see from our Collocation on 'China' that the words mentioned mostly are regions, viruses, and diseases.
+            This greatly contrasts to the context in which India is mentioned: which the corpus discuss topics such as
+            the country's wildlife and politics with the UAE, but rarely any diseases. This result is strange, as
+            they're both disease hotspots. But the difference might be explained by the simple fact that there's much
+            more Epidemiological research in China than India, according to <a target="_blank"
+              href="https://www.usnews.com/news/best-countries/articles/2017-06-16/us-leads-world-in-scientific-research-output-but-dominance-shrinking-study">
+              this article.</a> From our collocation on 'USA'
+            we see studies on lawmakers, marginalized groups due to the word 'Transgender', and discussion of migrant
+            worker health in the states. Strangely enough, we see very little mention of disease, although the US
+            contains more publications in Epidemiology and is rated the most productive country in research according
+            to<a target="_blank" href="https://www.frontiersin.org/articles/10.3389/fpubh.2021.720787/full">
+              this paper.</a> This might be because the study of disease requires on-site research, which would explain
+            discussing Chinese viral research. However, that does not justify the lack of papers on disease in India. As
+            such, this might be a sign of political bias through portraying China as a disease ridden country and not
+            other nearby regions.
+
+          </p>
+          <h6 class="body-subtitle">Key points</h6>
+          <p>In conclusion, we discovered the corpus discusses the effects of mostly tropical diseases in certain
+            regions and sometimes their effect on military personnel stationed in those regions. This can be expected considering
+            the topics published in the PLOS one journals. The reason China and Peru are frequently mentioned in these
+            articles could be simply due to the fact that there is a larger spread of disease in those regions. However,
+            there might be signs of political bias through the fact that China is mentioned more frequently than other
+            disease filled countries such as India and Peru.
           </p>
 
 
