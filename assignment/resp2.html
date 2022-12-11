@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Rami Richani</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap integration -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <link rel="stylesheet" href="/path/to/styles/default.css" />
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Font awesome for icons  -->
+  <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+    integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar sticky-top navbar-expand-md">
+    <a class="navbar-brand" href="#">Programming like a human</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--<img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" height=35px>-->
+      <!--<button class="btn btn-large btn-dark">Hello World</button>-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/RLAC.html">RLAC</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="article_title">
+
+  </section>
+  <section style="margin-bottom: 40%;">
+    <div class="row">
+      <div class="article-body col-md-10 col-sm-11 col-11 m-auto px-4 px-sm-3 py-lg-4 py-sm-2 my-3">
+        <h1 class="my-2 text-center">Response 2</h1>
+        <h3>Response Task</h3>
+        <p class="assignment">Response 2 (due 10 Oct-10 Nov) Use the Detecting Sentiment or the My Little Cousin
+          notebook with a corpus of your choice to discuss either sentiment in one text or most distinctive words in the
+          texts of your choice. There is code if you chose to use texts from Project Gutenberg and additional code if
+          you want to use your own txt files. NB: you will have to rename variables throughout the code depending on
+          what you choose! </p>
+
+        <h3 class="text-center mt-4 px-md-4 p-sm-1">Our Little Cousin Book Series</h2>
+          <p>
+            <strong>Hello!</strong> Today we will be analyzing three books from the Our Little Cousin series. The series
+            contains a set
+            of 19th-century fictional allegories that portray racist cultural stereotypes of certain ethnicities or
+            nationalities of people around the world to "educate" younger audiences on what the author believes to be
+            these people's culture and traditions. In specific, the 3 books we'll be looking at today are <a
+              target="_blank" href="https://www.gutenberg.org/ebooks/43585">"Our Little
+              Jewish Cousin,"</a> <a target="_blank" href="https://www.gutenberg.org/ebooks/46042">"Our Little Arabian
+              Cousin,"</a> and <a target="_blank" href="https://www.gutenberg.org/ebooks/44731"> "Nabul, Our Little
+              Egyptian Cousin,"</a> all downloaded from
+            Project Glutenburg. <em>Let's get to it...</em>
+          </p>
+
+          <h6 class="body-subtitle mt-4">Word occurences</h6>
+          <p>
+            After creating our corpus containing these three books, we ran a view of the most frequently occurring words
+            in these texts with a stopword list to remove any commonly used words. To analyze word occurrences, we
+            create a wordcloud in Rstudio and also display their frequencies to get a better understanding.
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-5"><img class="body-image" style="width:100%" src="/images/resp2/1.png"></div>
+              <div class="col-7"><img class="body-image" style="width:100%" src="/images/resp2/3.png"></div>
+            </div>
+            <figcaption>
+              Left image contains word cloud of most frequent words, right contains another vizualization showing
+              exact values of words and their occurences(n).
+            </figcaption>
+          </figure>
+
+          <p>We see that George is one of the most frequently used. This is because George is one of the main characters
+            in the Egyptian Cousin book, where he is depicted as an American visiting Egypt. We verify this by running a
+            collocation on the word "George." We also see children are frequently mentioned, which makes sense since the
+            book discusses children as that is their target audience. Another interesting word is "donkey." This is
+            mentioned in every book, primarily in the Egyptian Cousin one. What might seem like an inaccurate depiction
+            of Egypt is the fact that donkeys are mentioned as a more frequent form of transport than other Fauna such
+            as camels (mentioned 50 times) or horses (mentioned 27 times), which were also quite common in Egypt at the
+            time.
+          </p>
+
+          <h6 class="body-subtitle">Lets compare</h6>
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:70%" src="/images/resp2/4.png"></div>
+            </div>
+            <figcaption>
+              Comparison of words most commonly used and how its usage compares to other texts. The percentage indicates
+              the frequency
+              of usage out of all words used in each text.
+            </figcaption>
+          </figure>
+
+          <p>
+            From this visualization, we notice a couple distinctive word comparisons. We see that tents, camels, and
+            horses are more frequently mentioned in the Arab book in comparison to the Egyptian book. The text tries to
+            inaccurately connote that Arabs live mostly in the desert and in tents while Egypt has more infrastructure
+            because the words 'built' or 'street' used more frequently in Egypt. An interesting note is the word "Al"
+            which is used in the Arabic language appears more frequently in the Arab book when comparing to the Egyptian
+            one. "Al" means "the" in Arabic and is commonly used to address objects or people in formal Arabic. It is
+            usually used less frequently in Arabic dialects such as Egyptian Arabic, so that might explain the
+            comparison. In comparison between Arabian Cousin and Jewish Cousin, we see Boston is more frequently
+            mentioned in the Jewish Cousin book. This is possibly related to the fact that Boston is home to the <a
+              target="_blank" href="https://www.brandeis.edu/cmjs/community-studies/boston-report.html"> fourth largest
+              Jewish community in the United States.</a> We also see God is mentioned much more frequently in the
+            Jewish book. This result is interesting considering religion also plays a big part in Arab culture and
+            language, but God is mentioned only around 0.01% of the time in the Arab books. We run a concordance or
+            contextual analysis in Voyant Tools on the word god in the Arabic and Jewish books: 
+          </p>
+
+          <h6 class="body-subtitle"> Context on the word 'God'</h6>
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/resp2/6.png" class="d-block w-100 m-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Concordance on the word <em>God</em> in Our Little Jewish Cousin.</h5>
+                  <!-- <p>Some representative placeholder content for the first slide.</p> -->
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/images/resp2/7.png" class="d-block w-100 m-auto" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Concordance on the word <em>God</em> in Our Little Arab Cousin.</h5>
+                  <!-- <p>.</p> -->
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <p>
+            We immediately see a significant amount of Zionist literature in the Jewish text claiming that it is the
+            word of God to liberate the Jewish community from its cruel Egyptian Arab rulers. This allegory, although
+            fictional, connotates that Jewish communities are oppressed by Arab rulers. Furthermore, the lack of
+            religious representation of Islam in the Arab books, while a significant representation—although one would
+            argue an innacurate one—of Jewish religion in the Jewish book could be used to reason that a bias exists
+            in the texts
+            through potentially favoring Judaism over Islam.
+          </p>
+          <h6>Concluding remarks</h6>
+          <p>
+            In conclusion, through the analysis of the Our Little Cousin series, we identify a political and
+            stereotypical agenda to be read to children in the 1900s. We identified strange portrayals—mostly
+            inaccurate—of Jewish and Arab communities through the common use of stereotypical names and their cultures
+            and traditions.
+          </p>
+      </div>
+  </section>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <p>©2022 Rami Richani.</p>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>
