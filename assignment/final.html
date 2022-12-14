@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Rami Richani</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    rel="stylesheet" />
+
+  <!-- Bootstrap integration -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- CSS style sheet -->
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <link rel="stylesheet" href="/path/to/styles/default.css" />
+  <script src="/path/to/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <!-- Font awesome for icons  -->
+  <script defer src="https://use.fontawesome.com/releases/v6.1.2/js/all.js"
+    integrity="sha384-11X1bEJVFeFtn94r1jlvSC7tlJkV2VJctorjswdLzqOJ6ZvYBSZQkaQVXG0R4Flt"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar sticky-top navbar-expand-md">
+    <a class="navbar-brand" href="#">Programming like a human</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!--<img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" height=35px>-->
+      <!--<button class="btn btn-large btn-dark">Hello World</button>-->
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/RLAC.html">RLAC</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <section id="article_title">
+
+  </section>
+  <section style="margin-bottom: 40%;">
+    <div class="row">
+      <div class="article-body col-md-10 col-sm-11 col-11 m-auto px-4 px-sm-3 py-lg-4 py-sm-2 my-3">
+        <h1 class="my-2 text-center">Final Assignment</h1>
+        <h3>Assignment Task</h3>
+        <p class="assignment">Final Assignment (due 14 Dec) see the rubrics and guidelines. The final assignment asks
+          you to find a corpus of interest, to match it with a method you
+          have been exposed to this term and to analyze it using that method, all the while bringing a critical eye to
+          the method. This assignment can be done in pairs or alone. </p>
+
+        <h3 class="text-center mt-4 px-md-4 p-sm-1">Analysis of announcments by Vice Chancellor of NYUAD Mariët
+          Westermann</h2>
+          <p>In the midst of the COVID epidemic or when tragic events had occured throughout the US or the UAE, Vice
+            Chancellor of NYUAD Mariët Westermann would send email announcements to students portraying her remorse,
+            sorrow, and grief for these events.Today we will be using Stylometry in Python to determine if those emails
+            had been written by her or possibly a ghost writer. To do this we firstly generate corpora on her Arts and
+            Humanities academic papers released by Mariet which we are sure has been written by her and also generate
+            two <strong>other</strong> corpora containing journals written by authors who also discuss similar topics in
+            Arts and Humanities. We will then use <a target="_blank"
+              href="https://pkgstore.datahub.io/core/country-list/data_csv/data/d7c9d7cfb42cb69f4422dec222dbbaa8/data_csv.csv">
+              John Burrows' Delta Method</a> to determine which one of those texts are closest in writing to Mariet's
+            emails.
+            All the code used/corpus generated can be found <a target="_blank"
+              href="https://github.com/dolf321/RLAC_FINAL_ASS">
+              here.</a>
+            We will also do rolling stylometry to see how styles change as we go along the corpora and sentiment
+            analysis as we suspect
+            there might be a correlation between sentiment and COVID case spikes in those emails.
+            <!-- DEFINE WHAT THE METHOD DOES IN DETAIL HERE 
+            also run sentiment analysis to see how sentiment moves as we go through the pandemic-->
+            <em>Lets get to it!</em>
+
+          </p>
+
+          <h6 class="body-subtitle mt-4">Corpus Generation</h6>
+          <p>
+            So first, we gathered all email queries that match emails sent to NYUAD students by the VC's office and
+            remove all occurences of the word Mariet to avoid any features that might include similarities in writer
+            name. We now need to compare this corpus of emails to several corpora including Mariet's to see if her paper
+            bares any significant difference to other authors in closeness of features and writing styles. In total we
+            generate three corpora each containing 3 journals pertaining to Arts and Humanities written by authors
+            Mariet Westermann and two other authors: John Michael Montias and David R. Smith. These authors were
+            selected because they both discuss Dutch art, which is quite similar to Westermann's papers. So if we see if
+            their writing style is closer to the emails than Mariet's, we could say with near certainty that her writing
+            style does not match the emails. After gathering our pdfs, we then use the "pdftotxt" Python library for all
+            papers to convert the PDFs to text files so our Python script can parse the data.
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:20%" src="/images/final/1.png"></div>
+            </div>
+            <figcaption>
+              Corpus files numbered 1-3 are Mariet's Journals, 4-6 are John Michael Montias', and 7-9 are David R.
+              Smith's.
+            </figcaption>
+          </figure>
+
+          <h6 class="body-subtitle mt-4">Stylometry</h6>
+          <p>
+            We run our custom script <a target="_blank" href="https://github.com/dolf321/RLAC_FINAL_ASS"> available on
+              github here.</a> (this repo is private as it contains sensative data)
+            Our setup contain these 3 corpora, the corpora not written by Mariet are essentially our "control" in this
+            experiment.
+            We then see how close the corpora is to the emails by evaluating their "z-score" which is meant to represent
+            how far
+            data deviates from the mean or average with the average being the emails in this context. We also vary the
+            amount of
+            words we are interested in comparing between corpora which is represented across the x-axis. Running our
+            script yields the following results:
+
+            We run our custom script, available on <a target="_blank" href="https://github.com/dolf321/RLAC_FINAL_ASS">
+              available on
+              GitHub here.</a> (This repository is private because it contains sensitive
+            information) Our setup contains these 3 corpora; the corpora not written by Mariet are essentially our
+            "control" in this experiment. We then see how close the corpora are to the emails by evaluating their
+            "z-score," which is meant to represent how far the data deviates from the mean or average, with the average
+            being the emails in this context. We also vary the number of words we want to compare between corpora, which
+            are represented on the x-axis. Running our script yields the following results: 
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:45%" src="/images/final/2.png"></div>
+            </div>
+            <figcaption>
+              John Burrows Delta method and Z scores for various common word size.
+            </figcaption>
+          </figure>
+
+          <p>
+            From these results, we immediately see that all corpora have quite a high z-score, which is understandable
+            considering the topics discussed are drastically different, with the emails we compare them to being mostly
+            COVID announcements and the other corpora discussing arts and humanities. We also notice Mariet has the
+            lowest z-score of all the most common words used values, which means that among the other corpora, her
+            writing is identified as being the closest amongst them all. This means it's quite probable her writing is
+            included in the email announcements and not that of a ghost writer. But perhaps the majority of her emails
+            are written by her while the rest are not; we need to see stylometry as we flow along the passage. To do
+            this, we do rolling stylometry in R Studio using the "stylo" package and use a Support Vector Machine
+            classification model to compare between corpora. Here are our results:
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:100%" src="/images/final/3.png"></div>
+            </div>
+            <figcaption>
+              Rolling SVM with 100 features and 900 words per slice comparing Mariet, Michael, and Smith's writing
+              styles
+              to the emails. Mariet's works are highlighted in red, Michael's in green, and Smith's in blue. The
+              thickness
+              of the bottom stripe represents the certainty of the classification.
+            </figcaption>
+          </figure>
+
+          <p>
+            "Story development" on the x-axis in this case is the word index as we go along the email corpus, so as we
+            go along the corpus, time decreases, or we are essentially accessing older emails. With this in mind, we see
+            that the majority of the emails contain a lot of blue, representing Smith. This might be attributed to the
+            fact that the discussion topics are far from the email topics, so the classification model is mistaking
+            Mariet's writing for Smith's. Moreover, our sample size is only around 5000 words for each person, so the
+            small sample size might cause inaccurate data. On the other hand, it could also mean that the control's
+            writing in some 900-word chunks of text is in fact closer in style than Mariet's, indicating that she had
+            not written those parts of the corpus. The indication of black bars around David's writing indicates some
+            form of certainty in that classification.
+          </p>
+
+          <h6 class="body-subtitle mt-4">Sentiment analysis of the text</h6>
+          <p>
+            Another area we wish to explore is sentiment throughout the text. We expect to see some form of correlation
+            between natural tragedies, COVID lockdowns, or other negatively received events and a time of low, if not
+            negative, sentiment. To do this, we run sentiment analysis on the emails sent by the Vice Chancellor's
+            office using the Bing lexicon: Another area we wish to explore is sentiment throughout the text. We expect
+            to see some form of correlation between natural tragedies, COVID lockdowns, or other negatively received
+            events and a time of low, if not negative, sentiment. To do this, we run sentiment analysis on the emails
+            sent by the Vice Chancellor's office using the Bing lexicon: 
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-6"><img class="body-image" style="width:100%" src="/images/final/4.png"></div>
+              <div class="col-6"><img class="body-image" style="width:100%" src="/images/final/5.png"></div>
+            </div>
+            <figcaption>
+              Left vizualization contain clusters of texts from the email indicated by blue dots and their sentiment
+              score on the y-axis. On the right we see a smoothed
+              version of that sentiment as we go along the email corpus.
+            </figcaption>
+          </figure>
+
+          <p>
+
+            From both graphs, we see that most of the corpora and language used are generally positive, as would be
+            expected with official emails. We strangely see a downtrend as we go along the x-axis or look at older
+            emails on the right graph. This means that Mariet's announcements have been very positive recently, in
+            contrast to older announcements after around 5 in the index on the right graph. A closer look at the corpus
+            shows that most recent announcements discuss general announcements you would expect in a university: the
+            joining of faculty, new health center protocols, and remorse for the loss of faculty. We see that the older
+            emails, which are from 2021 to early 2022, are mostly COVID-19-related emails. These emails discuss
+            lockdowns and quarantine protocols in a time of uncertainty in Abu Dhabi during the COVID-19 lockdown. We
+            see that sentiment was generally low during lockdowns, which makes sense. We expect to see a decrease in
+            sentiment for an increasing number of COVID cases, so let's take a look at which dates the emails were found
+            to have the lowest and highest sentiment on the graph and compare it to COVID case spikes. The most recent
+            datestamps in the emails are from October 10, 2022, and the time when it dropped to the lowest at around
+            index 5 are emails from December 21, 2021.
+
+          </p>
+
+          <figure>
+            <div class="row mx-auto" style="width:76%;">
+              <div class="col-12"><img class="body-image" style="width:80%" src="/images/final/8.png"></div>
+            </div>
+            <figcaption>
+              Covid cases beginning data on graph is around December 2021 and the date at the end is around October 2022
+            </figcaption>
+          </figure>
+
+          <p>
+            These results were not as we expected; we see a weak correlation between COVID cases and the announcements,
+            which mostly discuss COVID-19 and health protocols. In fact, we see that right after December, when we
+            started to see an increase in sentiment, we had a rapid growth in COVID-19 cases. This might be attributed
+            to looser health protocols, which would be received positively by the masses but would result in a rapid
+            growth in daily cases. 
+          </p>
+
+
+          <h6 class="body-subtitle mt-4">Closing points</h6>
+
+          <p>
+            <em>So does Mariet have a ghostwriter?</em> Based on the results of rolling stylometry, we conclude that it is
+            possible that some of the emails were not written by her. However, we see an overall similarity in her
+            writing style with the emails in John Burrow's Delta method. We also see that the sentiment is quite
+            positive and starts to increase right when we have rapid growth in COVID cases, which might show some form
+            of correlation between the two.
+          </p>
+
+      </div>
+  </section>
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <p>©2022 Rami Richani.</p>
+  </div>
+
+  <script src="" async defer></script>
+</body>
+
+</html>
